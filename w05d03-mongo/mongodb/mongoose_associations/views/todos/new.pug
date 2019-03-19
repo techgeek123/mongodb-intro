@@ -1,0 +1,6 @@
+extends ../base.pug
+
+block content
+    form(action=`/instructors/${instructor.id}/todos` method="POST")
+        input(type="text", name="task")
+        input(type="submit", value="Submit!")

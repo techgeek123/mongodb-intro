@@ -1,0 +1,1 @@
+exports.Instructor = require('./instructor');

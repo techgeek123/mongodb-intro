@@ -1,0 +1,9 @@
+extends ../base.pug
+
+block content
+    h1 See all the todos for #{instructor.name}!
+    a(href=`/instructors/${instructor.id}/todos/new`) Make a new one!
+    ul
+        each todo in instructor.todos
+            li #{todo.task} &nbsp;
+                a(href=`/instructors/${instructor.id}/todos/${todo.id}/edit`) Edit
